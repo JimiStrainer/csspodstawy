@@ -37,7 +37,8 @@
 
 #main-nav {
     position: fixed;
-    left; 0;
+    left;
+    0;
     top: 0;
     z-index: 9999999999;
     background-color: white;
@@ -46,5 +47,149 @@
 
 .selektor-uniwersalny {
     margin-top: 90px;
-    
+
 }
+
+/* jednostki miary */
+
+#jednostki-miary {
+    30px;
+}
+
+#jednostki-miary > div {
+    background-color: aquamarine;
+    margin: 10px 0;
+}
+
+#piksele {
+    width: 400px;
+}
+
+#em {
+    width: 20em;
+}
+
+#procenty {
+    width: 50%;
+}
+
+#main-header {
+    height: 100vh;
+    background-color: beige;
+
+}
+
+/* pseudoelementy */
+
+#main-nav ul {
+    list-style-type: none;
+
+}
+
+#main-nav ul li::before {
+    content: '*';
+
+}
+
+#main-nav ul li::before {
+    font-family: FontAwesome;
+    content: '\f2d9';
+}
+
+#main-header h1 {
+    line-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+#main-header h1::before,
+#main-header h1::after {
+    content: '';
+    display: inline-block;
+    width: 20%;
+    border-top: 2px solid blue;
+    position: absolute;
+    top: 50%;
+}
+
+#main-header h1::before {
+    left: 10%;
+}
+
+#main-header h1::after {
+    right: 10%;
+}
+
+#main-nav ul li:first-child a {
+    color: red;
+}
+
+#main-nav ul li:last-child a {
+    color: red;
+}
+
+#main-nav ul li a:hover {
+    text-decoration: none;
+    color: violet
+}
+
+form input:focus {
+    border: 5px solid blue;
+}
+
+#main-nav ul li a:visited {
+    color: gray;
+
+}
+
+#dzieci p:nth-child(3) {
+    background-color: aqua;
+}
+
+#dzieci p:nth-of-type(5) {
+    background-color: aqua;
+}
+
+
+#dzieci p:nth-last-of-type(3) {
+    background-color: aqua;
+}
+
+/*
+an+b: 
+a - oznacza co ile elementów przeskakujemy
+b - oznacza od któego elementu zaczynamy
+*/
+
+#dzieci p:nth-of-type(3n + 1) {
+    background-color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
