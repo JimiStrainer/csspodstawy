@@ -1,0 +1,50 @@
+.bgGreen {
+    background-color: green;
+    height: 400px;
+    color: #ffffff;
+    position: relative;
+}
+
+.bgRed {
+    background-color: red;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+.bgBlue {
+    background-color: blue;
+}
+
+.relative,
+.relative-inner {
+    position: relative;
+}
+
+.relative {
+    background-color: yellow;
+    height: 400px
+}
+
+.relative-inner {
+    background-color: pink;
+    height: 50%;
+    width: 50%;
+    top: 100px;
+    left: 25%;
+}
+
+#main-nav {
+    position: fixed;
+    left; 0;
+    top: 0;
+    z-index: 9999999999;
+    background-color: white;
+    width: 100%;
+}
+
+.selektor-uniwersalny {
+    margin-top: 90px;
+    
+}
